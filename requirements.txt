@@ -1,0 +1,17 @@
+# requirements.txt
+
+# Core bot framework
+discord.py
+
+# Manages environment variables from the .env file
+python-dotenv
+
+# For the keep-alive web server
+Flask
+
+# The official Google API Client and authentication libraries
+google-api-python-client
+google-auth-oauthlib # Provides google.oauth2
+
+# The recommended library for interacting with our SQLite database
+SQLAlchemy

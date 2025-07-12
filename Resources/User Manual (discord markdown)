@@ -1,0 +1,50 @@
+~~------------------------------------------------------------------------------------------------------------------------------------------------------~~
+# **__Counter Bot v1.1.0 User Manual__**
+This bot helps you create and manage shared counters for tracking various stats on your server.
+## **Core Concepts**
+
+- **Group:** A category to organize your counters (e.g., "Raids", "Events", "Moderation").
+- **Counter:** A specific item you want to track that has a numerical value (e.g., "Boss Kills", "Members Joined").
+
+~~------------------------------------------------------------------------------------------------------------------------------------------------------~~
+## **Commands**
+**/createcounter**: Creates a new counter.
+- Example: /createcounter group:Raids name:Boss Kills
+
+**/listcounters**: Shows an interactive list of counters.
+- Example: 
+```
+/listcounters group:Raids
+```
+
+**/listgroups**: Lists all counter groups.
+- Example: 
+```
+/listgroups
+```
+
+**/deletecounter**: Deletes a counter. Prompts to delete the group if it becomes empty.
+- Example: 
+```
+/deletecounter group:Raids name:Boss Kills
+```
+
+**/deletegroup**: [DANGEROUS] Deletes a group and all its data.
+- Example: 
+```
+/deletegroup group:Events
+```
+
+**/version**: Shows the bot's version.
+- Example: 
+```
+/version
+```
+~~------------------------------------------------------------------------------------------------------------------------------------------------------~~
+## **Interactive List Buttons**
+- :arrow_up_small: (Up Arrow): Increments the counter's value by one.
+- :arrow_down_small: (Down Arrow): Decrements the counter's value by one.
+- :x: (Cross Mark): Deletes that specific counter.
+- :arrow_backward: and :arrow_forward: (Page Arrows): Navigates between pages if there are many counters in the group.
+- :arrows_counterclockwise: (Refresh): Manually refreshes the list with the latest data.
+~~------------------------------------------------------------------------------------------------------------------------------------------------------~~
